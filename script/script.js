@@ -1,7 +1,7 @@
-let swiper = new Swiper('.swiper-container', {
-  slidesPerView: 4,
-  spaceBetween: 10,
-  slidesPerGroup: 5,
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 5,
+  spaceBetween: 4,
+  slidesPerGroup: 4,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',

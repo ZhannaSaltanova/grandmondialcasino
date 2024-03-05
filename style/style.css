@@ -1,6 +1,8 @@
 body {
     overflow-x: hidden;
     background-color:#000;
+    display: flex;
+    flex-direction: column;
     
 }
 .container-bg {
@@ -292,6 +294,7 @@ em {
 
 .slider { 
     position: relative;
+    width: 100%;
     top: -320px;
     z-index: 5; 
 }
@@ -304,9 +307,6 @@ em {
     left: 0;
     z-index: 4;
     background-image: linear-gradient(to right, rgba(161, 126, 65, 0) 3%, #a17e41 25%, #eee396 50%, #a17e41 75%, rgba(161, 126, 65, 0) 97%);
-}
-.slider-container {
-    width: 100%;
 }
 .slider__desc { 
     font-family: "Poppins", sans-serif;
@@ -429,12 +429,9 @@ em {
 }
 
 @media screen and (max-width: 1024px){
-    .swiper-slide {
-        max-width: 300px;
-    }
-    .slider-second { 
-        height: 500px;
-        padding-bottom: 50px;
+    .slider-second {
+        padding: 10px;
+        padding-left: 50px;
     }
     hr {
         display: none;
@@ -457,6 +454,12 @@ em {
     }
     .slider-second {
         padding: 10px;
+    }
+    .btn {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+        padding: 5px;
     }
 
 
@@ -556,10 +559,6 @@ hr {
     }
 
     .slider-third {
-        position: relative;
-        top: -120px;
-        z-index: 5; 
-        background-color:#000;
         padding-left: 10px;
         padding-right: 30px;
         height: 500px;
@@ -602,6 +601,9 @@ hr {
         font-style: normal;
         margin-bottom: 10px;
         line-height: 1.5;
+    }
+    .slider-third {
+        padding-right: 10px;
     }
 }
 
@@ -777,10 +779,17 @@ hr {
     }
     
     .slider-fourth {
+        padding-right: 10px;
         padding-left: 10px;
     }
 }
 @media screen and (max-width: 478px){
+    .card-game__box {
+        z-index: 100;
+        position: relative;
+        width: 300px;
+        height:auto;
+    }
     .card-game__title {
         font-size: 24px;
         margin-bottom: 10px;
@@ -790,7 +799,9 @@ hr {
         margin-bottom: 70px;
     }
 }
-
+ footer {
+    margin-top: auto;
+ }
 .footer {
     background-color:#000;
     position: relative;
@@ -816,7 +827,55 @@ hr {
     text-align: center;
     color: #fff;
 }
+.about {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 800px;
+}
+.text {
+    border: 5px solid white;
+    border-radius: 20px;
+    max-width: 600px;
+    height: auto;
+    min-height: 500px;
+    width: 100%;
+    padding: 20px;
+}
+.text-title {
+    font-family: Poppins;
+    font-size: 21.5px;
+    text-align: center;
+    color: white;
+    margin: 20px;
+}
+.footer_second {
+    background-color:#000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
 
+@media screen and (max-width: 478px){
+    .about {
+        height: auto;
+    }
+    .text {
+        border: 5px solid white;
+        border-radius: 20px;
+        max-width: 600px;
+        height: auto;
+        min-height: 500px;
+        width: 100%;
+        padding: 20px;
+    }
+   .text-content {
+        font-size: 14px;
+   }
+   
+}
 
   
 
