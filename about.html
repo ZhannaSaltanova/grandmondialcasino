@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+    <header class="menu">
+        <div class="container header">
+            <a href="/" class="logo">
+                <img src="https://www.grandmondialcasino.games/wp-content/uploads/logo-1.png" alt="logo"
+                    class="logo">
+            </a>
+            <nav class="nav">
+                <ul class="nav">
+                    <li><a href="/about.html" class="menu_item">À PROPOS DE NOUS</a></li>
+                    <li><a href="/conditions.html" class="menu_item">TERMES & CONDITIONS</a></li>
+                    <li class="toggle"><img src="./img/en_CA.png" alt=""></li>
+                    <li class="lang">English</li>
+                </ul>
+                <div class="lang-items">
+                    <ul class="lang-item">
+                        <li><img src="./img/en_CA.png" alt="En" width="30px">English</li>
+                        <li><img src="./img/en_CA.png" alt="Fr" width="30px">Français</li>
+                        <li><img src="./img/en_CA.png" alt="De" width="30px">Deutsch</li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <main class="about">
+
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="/" class="logo-footer">
+                <img src="https://www.grandmondialcasino.games/wp-content/uploads/logo-1.png" alt="logo" class="logo">
+            </a>
+            <p class="footer_desc">*Ces jeux s’adressent à un public adulte (19+) et ne proposent pas de jeux en argent
+                réel ni <br> d’opportunité de gagner de l’argent réel ou des prix.</p>
+            <p class="copy">© 2024 GrandMondialCasino.Games</p>
+        </div>
+    </footer>
+    <script>
+          let toggleButton = document.querySelector('.toggle');
+  let langItems = document.querySelector('.lang-items');
+  
+  toggleButton.addEventListener('click', function () {
+      if (langItems.style.display === 'none' || langItems.style.display === '') {
+          langItems.style.display = 'block';
+      } else {
+          langItems.style.display = 'none';
+      }
+  });
+    </script>
+</body>
+
+</html>

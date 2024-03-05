@@ -1,31 +1,27 @@
-
-  let swiper = new Swiper('.swiper-container', {
-    slidesPerView: 4,
-    spaceBetween: 10,
-    slidesPerGroup: 5,
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+let swiper = new Swiper('.swiper-container', {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  slidesPerGroup: 5,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    1: {
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
-    breakpoints: {
-      1: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-      },
-      769: {
-        slidesPerView: 3,
-        spaceBetween: 30,
-      },
-      1000: {
-        slidesPerView: 4,
-        spaceBetween: 30
-      }
+    769: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    1000: {
+      slidesPerView: 4,
+      spaceBetween: 30
+    }
   },
-  keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-  },
-  });
+  
+});
 
 
   
