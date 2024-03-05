@@ -89,6 +89,13 @@ body {
  .lang-item li:hover {
     cursor: pointer;
  }
+ .nav .toggle {
+    text-decoration: none;
+    color:white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 10px;
+ }
 
  @media screen and (max-width: 1024px) {
     .container-bg {
@@ -357,18 +364,18 @@ em {
 }
 
 .btn {
-    width: 200px;
-    height: 60px;
+    width: 140px;
+    height: 40px;
     border-radius: 100px;
     border: 8px solid rgb(0, 128, 255);
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 16px;
+    font-size: 13px;
     background: rgba(0, 0, 0, .9);
     border: 4px solid #00b0e3;
     color: #00b0e3;
-    padding: 10px;
+    padding: 5px;
     text-transform: uppercase;
     transition: all .1s ease-in-out;
 }
@@ -387,7 +394,7 @@ em {
 .swiper-slide img {
     width: 100%;
     height: auto;
-    border-radius: 20px; 
+    border-radius: 15px; 
     
 }
 .swiper-slide img::after {
@@ -424,7 +431,7 @@ em {
     z-index: 5; 
     padding-left: 100px;
     padding-right: 30px;
-    height: 700px;
+    height: auto;
     padding-bottom: 100px;
 }
 
@@ -526,12 +533,7 @@ hr {
 @media screen and (max-width: 1024px) {
     .lucky {
         background-image: none;
-        position: relative;
-        top: -120px;
-        z-index: 5; 
         height: auto;
-        display: flex;
-        justify-content: flex-start;
         padding-top: 120px;
         padding-bottom: 10px;
         padding-left: 50px;
@@ -570,16 +572,7 @@ hr {
 }
 @media screen and (max-width: 478px){
     .lucky {
-        background-image: none;
-        position: relative;
-        top: -120px;
-        z-index: 5; 
-        height: auto;
-        display: flex;
-        justify-content: flex-start;
-        padding-top: 120px;
-        padding-bottom: 10px;
-        padding-left: 50px;
+        padding: 120px 10px 10px 10px
     }
     .lucky-content { 
         max-width: 500px;

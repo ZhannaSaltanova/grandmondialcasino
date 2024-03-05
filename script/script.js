@@ -1,26 +1,25 @@
 const swiper = new Swiper('.swiper', {
-  slidesPerView: 5,
-  spaceBetween: 4,
-  slidesPerGroup: 4,
+  slidesPerView: 6, 
+  spaceBetween: 10, 
+  slidesPerGroup: 4, 
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
   },
   breakpoints: {
     1: {
-      slidesPerView: 1,
-      spaceBetween: 10,
+      slidesPerView: 3, 
+      spaceBetween: 10, 
     },
     769: {
-      slidesPerView: 3,
-      spaceBetween: 30,
+      slidesPerView: 4, 
+      spaceBetween: 30, 
     },
-    1000: {
-      slidesPerView: 4,
-      spaceBetween: 30
+    1024: { 
+      slidesPerView: 6, 
+      spaceBetween: 30  
     }
   },
-  
 });
 
 
