@@ -1,9 +1,6 @@
 body {
     overflow-x: hidden;
     background-color:#000;
-    display: flex;
-    flex-direction: column;
-    
 }
 .container-bg {
     padding-left: 100px;
@@ -16,11 +13,6 @@ body {
     z-index: 3;
     padding: 20px;
  }
-.container {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
- }
 .header {
     width: 100%;
     height: 70px;
@@ -29,9 +21,9 @@ body {
     margin-top: 20px;
     gap:50px;
     align-items: center;
-    padding-right: 150px;
-    z-index: 20;
- }
+    background: transparent;
+    position: relative; 
+}
 .logo {
     max-width: 120px;
     position: relative; 
@@ -103,10 +95,9 @@ body {
     display: none;
     flex-direction: column;
     gap:5px;
-    z-index: 3;
-    position: absolute;
+    position: relative;
     top:5px;
-    right: -60px;
+    margin-left: -5px;
  }
  .burger .bur {
     width: 30px;
@@ -144,7 +135,7 @@ body {
 }
 @media screen and (max-width: 450px) {
     .container-bg {
-        padding-left: 20px;
+        padding-left: 10px;
         padding-right: 10px; 
     }
     .header {
@@ -153,7 +144,10 @@ body {
         justify-content: flex-start;
         margin-top: 20px;
         gap:0px;
-     }
+    }
+    .container {
+        width: 80%;
+    }
     .lang {
         display: none;
     }
@@ -167,10 +161,7 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: auto;
-    position: relative;
-    top: -120px;
-    padding-top: 200px;
+    padding-top: 20px;
     display: flex;
     justify-content: space-around;
     z-index: 1;
@@ -248,6 +239,7 @@ em {
 }
 .hero-img {
     max-width: 600px;
+    height: auto;
     margin-right: 100px;
 }
 
@@ -264,6 +256,7 @@ em {
         padding-top: 20px;
         position: relative;
         top: -220px;
+        margin-bottom: 70px;
     }
     .text-header {
         font-size: 30px;
@@ -302,7 +295,7 @@ em {
 }
 @media screen and (max-width: 478px){
     .hero {
-        padding-top: 150px;
+        padding-top: 20px;
         flex-wrap: wrap;
         gap:20px;
     }
@@ -324,20 +317,8 @@ em {
 }
 
 .slider { 
-    position: relative;
     width: 100%;
-    top: -320px;
-    z-index: 5; 
-}
-.slider::after {
-    position: absolute;
-    content: "";
-    height: 4px;
-    width: 100%;
-    bottom: -100px;
-    left: 0;
-    z-index: 4;
-    background-image: linear-gradient(to right, rgba(161, 126, 65, 0) 3%, #a17e41 25%, #eee396 50%, #a17e41 75%, rgba(161, 126, 65, 0) 97%);
+    margin-top: -250px;
 }
 .slider__desc { 
     font-family: "Poppins", sans-serif;
@@ -347,12 +328,15 @@ em {
     color: white;
     margin-bottom: 40px;
 }
-.slider__desc::before {
+.before {
+    position: relative;
+}
+.before::before {
     position: absolute;
     content: "";
     height: 4px;
     width: 100%;
-    bottom: -100px;
+    top: -50px;
     left: 0;
     z-index: 4;
     background-image: linear-gradient(to right, rgba(161, 126, 65, 0) 3%, #a17e41 25%, #eee396 50%, #a17e41 75%, rgba(161, 126, 65, 0) 97%);
@@ -430,41 +414,31 @@ em {
 }
 
 .slider-second { 
-    position: relative;
-    top: -120px;
-    z-index: 5; 
     padding-left: 100px;
     padding-right: 30px;
-    height: auto;
     padding-bottom: 100px;
+    margin-top: 150px;
+    height: auto;
 }
 
 @media screen and (max-width: 1024px){
     .slider-second {
         padding: 10px;
     }
-    hr {
-        display: none;
-    }
-    .slider__desc.hr::before {
-        position: absolute;
-        content: "";
-        height: 4px;
-        width: 100%;
-        bottom: -20px;
-        left: 0;
-        z-index: 4;
-        background-image: linear-gradient(to right, rgba(161, 126, 65, 0) 3%, #a17e41 25%, #eee396 50%, #a17e41 75%, rgba(161, 126, 65, 0) 97%);
-    }
    
 }
 @media screen and (max-width: 478px) {
     .slider__desc.margin {
-        margin-top: 70px;
+        margin-top: 170px;
     }
     .slider-second {
         padding: 10px;
+        margin-top: 70px;
     }
+    .before::before {
+        top:-20px;
+    }
+
     .btn {
         width: 100px;
         height: 30px;
@@ -477,25 +451,35 @@ em {
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-    position: relative;
-    top: -120px;
-    z-index: 5; 
     height: auto;
     display: flex;
     justify-content: flex-start;
     padding-top: 300px;
     padding-bottom: 50px;
     padding-left: 100px;
+    position: relative;
 }
-hr {
+.lucky::before {
     position: absolute;
+    content: "";
     height: 4px;
     width: 100%;
-    top: -10px;
+    top: 0px;
     left: 0;
     z-index: 4;
     background-image: linear-gradient(to right, rgba(161, 126, 65, 0) 3%, #a17e41 25%, #eee396 50%, #a17e41 75%, rgba(161, 126, 65, 0) 97%);
 }
+.lucky::after {
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    z-index: 4;
+    background-image: linear-gradient(to right, rgba(161, 126, 65, 0) 3%, #a17e41 25%, #eee396 50%, #a17e41 75%, rgba(161, 126, 65, 0) 97%);
+}
+
 .lucky-content { 
     width: 100%;
     max-width: 500px;
@@ -518,29 +502,19 @@ hr {
     margin-bottom: 10px;
     line-height: 1.5;
 }
-.before::before {
-    position: absolute;
-    content: "";
-    height: 4px;
-    width: 100%;
-    bottom: 100px;
-    left: 0;
-    z-index: 4;
-    background-image: linear-gradient(to right, rgba(161, 126, 65, 0) 3%, #a17e41 25%, #eee396 50%, #a17e41 75%, rgba(161, 126, 65, 0) 97%);
-}
 
 
 @media screen and (max-width: 1024px) {
     .lucky {
         background-image: none;
         height: auto;
-        padding-top: 200px;
         padding-bottom: 10px;
-        padding-left: 50px;
+        padding-left: 20px;
+        padding-top: 60px;
     }
     .lucky-content { 
         max-width: 500px;
-        height: 500px;
+        height: 300px;
     }
     .lucky-content__header {
         color: #00b0e3;
@@ -559,17 +533,15 @@ hr {
         margin-bottom: 10px;
         line-height: 1.5;
     }
-    .before::before {
-        height: 4px;
-        width: 100%;
-        bottom: 30px;
-        left: 0;
+    .lucky::before {
+        top: 30px;
     }
   
 }
+
 @media screen and (max-width: 478px){
     .lucky {
-        padding: 120px 10px 10px 10px;
+        padding: 50px 10px 10px 10px;
         height: 450px;
     }
     .lucky-content { 
@@ -593,6 +565,9 @@ hr {
         margin-bottom: 10px;
         line-height: 1.5;
     }
+    .lucky::before {
+        top: 30px;
+    }
 }
 
 .footer {
@@ -603,10 +578,9 @@ hr {
     align-items: center;
     gap:20px;
     height: 200px;
-    top:-220px;
 }
 .logo-footer {
-    margin-top: 130px;
+    margin-top: 40px;
 }
 .footer_desc {
     font-family: Poppins;
@@ -652,9 +626,6 @@ hr {
     gap:20px;
 }
 @media screen and (max-width: 478px){
-    .footer {
-        padding-top: 120px;
-    }
     .logo-footer {
         margin-top: 130px;
     }
