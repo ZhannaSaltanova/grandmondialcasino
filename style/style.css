@@ -301,6 +301,7 @@ em {
     }
     .hero__text {
         top: 0px;
+        height: 190px;
     }
     .text-header {
         font-size: 30px;
@@ -542,11 +543,11 @@ em {
 @media screen and (max-width: 478px){
     .lucky {
         padding: 50px 10px 10px 10px;
-        height: 450px;
+        height: 500px;
     }
     .lucky-content { 
         max-width: 500px;
-        height: 500px;
+        height: 550px;
     }
     .lucky-content__header {
         color: #00b0e3;
@@ -568,6 +569,9 @@ em {
     .lucky::before {
         top: 30px;
     }
+    .lucky::after {
+        bottom: -30px;
+    }
 }
 
 .footer {
@@ -580,7 +584,7 @@ em {
     height: 200px;
 }
 .logo-footer {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 .footer_desc {
     font-family: Poppins;
@@ -626,9 +630,6 @@ em {
     gap:20px;
 }
 @media screen and (max-width: 478px){
-    .logo-footer {
-        margin-top: 130px;
-    }
     .footer_desc {
         font-family: Poppins;
         font-size: 21.5px;
