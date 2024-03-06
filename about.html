@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Шаблон</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
 </head>
 <body>
     <header class="menu">
-        <div class="container header">
+        <div class="header">
             <a href="/" class="logo">
                 <img src="https://www.grandmondialcasino.games/wp-content/uploads/logo-1.png" alt="logo"
                     class="logo">
@@ -25,8 +25,7 @@
                 <ul class="nav">
                     <li><a href="about.html" class="menu_item">À PROPOS DE NOUS</a></li>
                     <li><a href="conditions.html" class="menu_item">TERMES & CONDITIONS</a></li>
-                    <li class="toggle"><img src="./img/en_CA.png" alt=""></li>
-                    <li class="lang">English</li>
+                    <li class="toggle"><img src="./img/en_CA.png" alt="">    English</li>
                 </ul>
                 <div class="lang-items">
                     <ul class="lang-item">
@@ -34,6 +33,19 @@
                         <li><img src="./img/en_CA.png" alt="Fr" width="30px">Français</li>
                         <li><img src="./img/en_CA.png" alt="De" width="30px">Deutsch</li>
                     </ul>
+                </div>
+                <div class="wrapper"> 
+                        <div class="burgermenu">
+                            <a href="#" class="burger-button">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </a>
+                    <nav class="burger-list">
+                        <a href="about.html">À PROPOS DE NOUS</a>
+                        <a href="conditions.html">TERMES & CONDITIONS</a>
+                    </nav>
+                </div>
                 </div>
             </nav>
     </header>
@@ -51,8 +63,9 @@
                 Please contact us at marketing@grandmondialcasino.games for any marketing inquiries.</p>
         </div>
     </main>
-    <footer>
-        <div class="footer_second">
+        
+    <footer class="footer">
+        <div class="footer">
             <a href="/" class="logo-footer">
                 <img src="https://www.grandmondialcasino.games/wp-content/uploads/logo-1.png" alt="logo" class="logo">
             </a>
@@ -61,18 +74,37 @@
             <p class="copy">© 2024 GrandMondialCasino.Games</p>
         </div>
     </footer>
+
+
+
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
-          let toggleButton = document.querySelector('.toggle');
-  let langItems = document.querySelector('.lang-items');
-  
-  toggleButton.addEventListener('click', function () {
-      if (langItems.style.display === 'none' || langItems.style.display === '') {
-          langItems.style.display = 'block';
-      } else {
-          langItems.style.display = 'none';
-      }
-  });
+        let toggleButton = document.querySelector('.toggle');
+        let langItems = document.querySelector('.lang-items');
+        
+        toggleButton.addEventListener('click', function () {
+            if (langItems.style.display === 'none' || langItems.style.display === '') {
+                langItems.style.display = 'block';
+            } else {
+                langItems.style.display = 'none';
+            }
+        });
+
+
+        $('.burger-button').on('click', function(e) {
+            e.preventDefault();  
+            $('.burgermenu').toggleClass('burgermenu_active');
+        });
+
     </script>
 </body>
 
 </html>
+   
+    
