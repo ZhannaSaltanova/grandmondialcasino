@@ -226,10 +226,6 @@ body {
   
 }
 @media screen and (max-width: 450px) {
-    /* .container-bg {
-        padding-left: 10px;
-        padding-right: 10px; 
-    } */
     .container-bg {
         padding-left: 100px;
         padding-right: 30px;
@@ -482,11 +478,12 @@ em {
         width: 100%;
         display: block;
         position: absolute;
-        top:0;
+        top:0px;
         left: 0;
         right: 0;
-        bottom:0;
+        bottom:0px;
         margin-top: -5px;
+        margin-bottom: 100px;
     }
 }
 
@@ -603,6 +600,7 @@ em {
 
     .slider-second {
         padding: 10px;
+        padding-right: 20px;
     }
     .slider__desc.margin {
         margin-top: -50px;
@@ -610,9 +608,9 @@ em {
    
 }
 @media screen and (max-width: 478px) {
-        .slider {
-            margin-top: 100px;
-        }
+    .slider {
+        margin-top: 100px;
+    }
     
     .slider__desc {
         font-size: 18px;
@@ -689,7 +687,7 @@ td {
 .text-contents { 
     width: 100%;
     height: auto;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     padding-right: 20px;
 }
 .text-content__header {
@@ -750,6 +748,7 @@ td {
         padding-top: 20px;
         margin-top: 50px;
         margin-bottom: 40px;
+        
     }
     .text-contents { 
         max-width: auto;
@@ -883,7 +882,8 @@ td {
         justify-content: center;
     }
     .lucky-content { 
-        max-width: auto;
+        max-width: 100%;
+        padding-right: 20px;
         height: auto;
     }
     .lucky-content__header {
@@ -908,6 +908,29 @@ td {
     }
   
 }
+@media screen and (max-width: 768px){
+    .lucky-content { 
+        
+    }
+    .lucky-content__header {
+        color: #00b0e3;
+        font-size: 31px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: 10px;
+    }
+    .lucky-content__desc { 
+        color: white;
+        font-size: 18px;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+}
+
 
 @media screen and (max-width: 478px){
     .lucky {
