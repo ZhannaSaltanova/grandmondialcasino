@@ -44,6 +44,7 @@ body {
     position: relative; 
 }
 .logo {
+    width: 100%;
     max-width: 120px;
     position: relative; 
     z-index: 10;
@@ -546,6 +547,9 @@ em {
     text-align: center;
     border: 2px solid #fff;
     border-radius: 20px; 
+}
+.swiper-slide img {
+    width: 100%;
 }
 
 .btn {
