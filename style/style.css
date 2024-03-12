@@ -1,4 +1,21 @@
 
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Regular.ttf) format(truetype);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-Medium.ttf) format(truetype);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(../fonts/Poppins-SemiBold.ttf) format(truetype);
+    font-weight: 600;
+}
 body {
     overflow-x: hidden;
     background-color:#000;
@@ -6,7 +23,7 @@ body {
 .container-bg {
     padding-left: 100px;
     padding-right: 30px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000), url('../img/bg.png') center/cover; 
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000), url('../img/AnyConv.com__bg.webp') center/cover; 
 }
 /* header */
 .menu {
@@ -811,7 +828,7 @@ td {
 
 
 .lucky {
-    background-image: url('../img/cta-bg-1.jpg');
+    background-image: url('../img/AnyConv.com__cta-bg-1.webp');
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
