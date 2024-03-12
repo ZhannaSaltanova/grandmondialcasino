@@ -3,18 +3,21 @@
     font-family: "Poppins";
     src: url(../fonts/Poppins-Regular.ttf) format(truetype);
     font-weight: 400;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Poppins";
     src: url(../fonts/Poppins-Medium.ttf) format(truetype);
     font-weight: 500;
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Poppins";
     src: url(../fonts/Poppins-SemiBold.ttf) format(truetype);
     font-weight: 600;
+    font-display: swap;
 }
 body {
     overflow-x: hidden;
