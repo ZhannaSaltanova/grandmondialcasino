@@ -454,6 +454,9 @@ em {
 }
 @media screen and (max-width: 478px){
     .container-bg {
+        background-image:url('../img/hero-bg-sm-1.webp');
+        background-size:100% 70%;
+        background-repeat:no-repeat;
         padding-left: 10px;
         padding-right: 5px;
     }
@@ -462,6 +465,7 @@ em {
         flex-wrap: wrap;
         gap:20px;
         height: 100px;
+       
     }
     .hero__text {
         top: 0px;
@@ -638,7 +642,7 @@ em {
 }
 @media screen and (max-width: 478px) {
     .slider {
-        margin-top: 100px;
+        margin-top: 0px;
     }
     
     .slider__desc {
@@ -646,10 +650,11 @@ em {
     }
     .slider-second {
         padding: 10px;
-        margin-top: 20px;
+        margin-top: 100px;
+        margin-bottom: 20px;
     }
     .before::before {
-        top:-20px;
+        top:0px;
     }
 
     .btn {
